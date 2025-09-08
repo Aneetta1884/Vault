@@ -15,7 +15,6 @@ import Settings from './pages/Settings';
 import SwitchAccount from './pages/SwitchAccount';
 import StudentDetail from './pages/StudentDetail';
 
-
 function App() {
   return (
     
@@ -36,6 +35,7 @@ function App() {
       <Route path="/settings" element={<Settings/>} />
       <Route path="/switchaccount" element={<SwitchAccount/>} />
       <Route path="/studentdetail" element={<StudentDetail/>} />
+
 
    
 
