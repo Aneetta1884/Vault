@@ -1,0 +1,291 @@
+/* Container styles */
+.bg-gray-100 {
+  background-color: #f7fafc;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+/* Header styles */
+.text-2xl {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.text-gray-600 {
+  color: #718096;
+}
+
+/* Stats grid styles */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Force 4 cards in one row */
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.stat-card {
+  padding: 0.75rem; /* Reduced padding to make cards smaller */
+  border-radius: 0.25rem;
+  text-align: center;
+  min-width: 0; /* Prevents overflow issues */
+  flex: 1 1 auto; /* Allows cards to shrink */
+  max-width: 100%; /* Ensures cards don't exceed container */
+}
+
+
+.blue { background-color: #ebf8ff; }
+.green { background-color: #f0fff4; }
+.yellow { background-color: #fffaf0; }
+.red { background-color: #fff5f5; }
+
+.stat-title {
+  font-size: 1rem; /* Reduced font size for smaller cards */
+  font-weight: 600;
+  margin-bottom: 0.25rem; /* Reduced margin */
+}
+
+.stat-value {
+  font-size: 1.25rem; /* Reduced font size for smaller cards */
+}
+
+/* Table styles */
+.bg-white {
+  background-color: #ffffff;
+}
+
+.shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+th {
+  font-weight: 600;
+}
+
+/* Status badges */
+.bg-yellow-200 {
+  background-color: #fefcbf;
+}
+
+.bg-green-200 {
+  background-color: #c6f6d5;
+}
+
+.bg-blue-200 {
+  background-color: #bee3f8;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+/* Button styles */
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.bg-purple-500 {
+  background-color: #9b59b6;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.dashboard-container {
+  background-color: #f7fafc;
+  min-width: 0; /* Removed min-width to allow flexibility */
+}
+
+.dashboard-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.date-info {
+  color: #718096;
+  margin-bottom: 1.5rem;
+}
+
+.ticket-table-container {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.table-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.ticket-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ticket-table th,
+.ticket-table td {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.ticket-table th {
+  font-weight: 600;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Status pill base */
+.status {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  min-width: 90px;
+}
+
+/* Specific status colors */
+.status.open {
+  background-color: #f5f3ff;
+  color: #1a1a1a;
+}
+
+.status.closed {
+  background-color: #f5f3ff;
+  color: #1a1a1a;
+}
+
+.status.in-progress {
+  background-color: #f5f3ff;
+  color: #1a1a1a;
+}
+
+.button-container {
+  margin-top: 1.5rem;
+}
+
+.download-button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #1d4ed8;
+}
+
+.card {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card-title {
+  font-weight: 600;
+  color: #111827;
+}
+
+.card-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Responsive behavior */
+@media (max-width: 1200px) {
+  .stats-grid {
+      grid-template-columns: repeat(2, 1fr); /* Two cards per row on medium screens */
+  }
+  .stat-card {
+      padding: 0.5rem; /* Further reduce padding */
+      .stat-title { font-size: 0.875rem; } /* Smaller font */
+      .stat-value { font-size: 1rem; } /* Smaller font */
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+      grid-template-columns: 1fr; /* One card per row on small screens */
+  }
+  .stat-card {
+      padding: 0.25rem; /* Minimum padding */
+      .stat-title { font-size: 0.75rem; } /* Smaller font */
+      .stat-value { font-size: 0.875rem; } /* Smaller font */
+  }
+}

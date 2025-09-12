@@ -1,0 +1,200 @@
+.dashboard-container {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .dashboard-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .dashboard-subtitle {
+    color: #4b5563;
+    font-size: 0.875rem;
+  }
+  
+  .stats-grids {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .stat-cards {
+    transition: all 0.2s ease;
+    background-color: #f3f4f6;
+    padding: 1rem;
+    border-radius: 0.75rem;
+  }
+  .stat-cards:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-label {
+    color: #4b5563;
+  }
+  .student-count {
+    margin: 0 0 15px 0;
+    color: #666;
+    font-size: 16px;
+  }
+  
+  .stat-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .stat-value.growth {
+    color: #16a34a;
+  }
+  
+  .section-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  
+
+ 
+ 
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 1200px) {
+    .charts-grid {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .charts-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .stats-grids {
+      grid-template-columns: 1fr;
+    }
+    
+    .actions-buttons {
+      flex-direction: column;
+    }
+  }
+  
+  .charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+  }
+  
+  .chart-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: 100%;
+    min-width: 0; /* Prevents overflow issues */
+    box-sizing: border-box;
+  }
+  .chart-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .chart-value {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .chart-sub {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .chart-container {
+    height: 10rem;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .bar-group {
+    display: flex;
+    justify-content: space-around; /* Better spacing for different screen sizes */
+    gap: 10px;
+    flex-wrap: wrap; /* Allow wrapping on very small screens */
+  }
+  .bar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 100px;              /* base bar height */
+    background: #f0edf2;
+    border-top: 2px solid #555; /* top line like in your 1st screenshot */
+  }
+  
+  .bar-label {
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+  }
+  .bar.premium {
+    height: 5rem;
+    background-color: #d1d5db;
+  }
+  
+  .bar.basic {
+    height: 5rem;
+    background-color: #e5e7eb;
+  }
+  
+  
+  
+  .actions-section {
+    margin-top: 2rem;
+  }
+  
+  .actions-sub {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-top: 0.25rem;
+  }
+  
+  .actions-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .action-btn {
+    background-color: #e5e7eb;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    margin-bottom:20px;
+  }
+  
+  /* SchoolDetail.css */
+.back-button {
+ margin-top:20px;
+ margin-left:15px;
+ margin-bottom:10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #f3f4f6;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: #e5e7eb;
+}

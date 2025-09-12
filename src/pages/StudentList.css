@@ -1,0 +1,295 @@
+.students-container {
+    width: 95%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .search-box {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  /* ==== Table Styles ==== */
+  .students-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  
+  .students-table th,
+  .students-table td {
+    padding: 16px 14px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    vertical-align: top;
+  }
+  
+  .students-table th {
+    background-color: #f9f9f9;
+    font-weight: 600;
+  }
+  
+  .plan.premium {
+    color: #7a3cff;
+    font-weight: 500;
+  }
+  .plan.standard {
+    color: #007bff;
+    font-weight: 500;
+  }
+  .plan.basic {
+    color: #28a745;
+    font-weight: 500;
+  }
+  
+  /* ==== Actions ==== */
+  .actions {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    gap: 6px;
+    color: #5a4fcf;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  
+  .actions div:hover {
+    text-decoration: underline;
+  }
+  
+  /* ==== Modal Styles ==== */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  
+  .modal h3 {
+    margin-bottom: 18px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .modal label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  
+  .modal select,
+  .modal textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .modal textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  /* Modal buttons */
+  .modal-actions {
+    margin-top:30px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  
+  .cancel-btn {
+    background: #eee;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .confirm-btn {
+    background: #9b8cf0;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .confirm-btn:hover {
+    background: #7f6ee0;
+  }
+  
+  /* ===== Modal Styles ===== */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: left;
+  }
+  
+  .modal-content h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  
+  .modal-content label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .modal-content select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .cancel-btn {
+    background: #eee;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .confirm-btn {
+    background: #a998d9;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Existing styles remain unchanged ... */
+
+.suspend-btn {
+    background: #e74c3c;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .suspend-btn:hover {
+    background: #c0392b;
+  }
+  /* Pagination Container */
+.pagination {
+    display: flex;
+    justify-content: flex-end;  /* Aligns pagination to right side */
+    align-items: center;
+    margin-top: 20px;
+    gap: 8px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Page Numbers */
+  .page-number {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background: #f8f8f8;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .page-number:hover {
+    background: #eaeaea;
+  }
+  
+  /* Active Page */
+  .page-number.active {
+    background: #7a5af5;
+    color: white;
+    font-weight: bold;
+    border-color: #7a5af5;
+  }
+  
+  /* Prev / Next Buttons */
+  .page-btn {
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    background: #f0f0f0;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .page-btn:hover {
+    background: #e0e0e0;
+  }
+  
+  .page-btn:disabled {
+    background: #ddd;
+    cursor: not-allowed;
+  }
+  
+/* Add or update this in your CSS file */
+
+
+.upgrade-modal textarea {
+  width: 100%; /* Ensure it takes full width of the modal */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  resize: vertical; /* Allows vertical resizing only */
+  box-sizing: border-box; /* Ensures padding doesn't add to the width */
+}

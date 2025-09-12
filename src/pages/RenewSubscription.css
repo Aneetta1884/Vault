@@ -1,0 +1,251 @@
+/* Full Width Renew Subscription Styles */
+.renew-subscription-fullwidth {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .school-header-fullwidth {
+    background-color: #f8f9fa;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .school-header-fullwidth h2 {
+    margin: 0;
+    color: #495057;
+    font-size: 1.5rem;
+  }
+  
+  .renew-content-fullwidth {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .renew-grid-fullwidth {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+  
+  .current-plan-fullwidth,
+  .plan-selection-fullwidth,
+  .payment-section-fullwidth {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .current-plan-fullwidth h3,
+  .plan-selection-fullwidth h3,
+  .payment-section-fullwidth h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #495057;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .plan-details-fullwidth {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .detail-item-fullwidth {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .detail-item-fullwidth .label {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 5px;
+  }
+  
+  .detail-item-fullwidth .value {
+    font-size: 16px;
+    font-weight: 500;
+    color: #495057;
+  }
+  
+  .plan-cards-fullwidth {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .plan-card-fullwidth {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .plan-card-fullwidth.selected {
+    border-color: #6B46C1;
+    background-color: #f9f7ff;
+  }
+  
+  .plan-header-fullwidth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .plan-header-fullwidth h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #495057;
+    flex: 1;
+  }
+  
+  .price {
+    font-size: 16px;
+    font-weight: 600;
+    color: #6B46C1;
+    margin: 0 10px;
+  }
+  
+  .select-btn-fullwidth {
+    background-color: #6B46C1;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  
+  .select-btn-fullwidth:hover {
+    background-color: #553c9a;
+  }
+  
+  .plan-features-fullwidth {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .plan-features-fullwidth li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #495057;
+  }
+  
+  .plan-features-fullwidth li svg {
+    color: #28a745;
+    margin-right: 8px;
+  }
+  
+  .payment-details-fullwidth {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .selected-plan-summary-fullwidth {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  
+  .summary-item-fullwidth {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .summary-item-fullwidth .label {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 5px;
+  }
+  
+  .summary-item-fullwidth .value {
+    font-size: 16px;
+    font-weight: 500;
+    color: #495057;
+  }
+  
+  .payment-method-fullwidth h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #495057;
+  }
+  
+  .payment-select-fullwidth {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .renew-btn-fullwidth {
+    background-color: #6B46C1;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  
+  .renew-btn-fullwidth:hover:not(:disabled) {
+    background-color: #553c9a;
+  }
+  
+  .renew-btn-fullwidth:disabled {
+    background-color: #ced4da;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .renew-grid-fullwidth {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .plan-cards-fullwidth {
+      grid-template-columns: 1fr;
+    }
+    
+    .selected-plan-summary-fullwidth {
+      grid-template-columns: 1fr;
+    }
+    
+    .plan-header-fullwidth {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .price {
+      margin: 5px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .renew-subscription-fullwidth {
+      padding: 10px;
+    }
+    
+    .current-plan-fullwidth,
+    .plan-selection-fullwidth,
+    .payment-section-fullwidth {
+      padding: 15px;
+    }
+  }
