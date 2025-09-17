@@ -244,12 +244,12 @@ const StudentList = () => {
                         </span>{' '}
                         Settings
                       </Link>
-                      <Link to="/profilesetting" className="profile-option">
+                      {/* <Link to="/profilesetting" className="profile-option">
                         <span className="icon">
                           <i className="fas fa-edit"></i>
                         </span>{' '}
                         Edit
-                      </Link>
+                      </Link> */}
                       <div
                         className="profile-option logout"
                         onClick={() => setShowLogoutModal(true)}

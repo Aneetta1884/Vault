@@ -36,6 +36,11 @@ const Dashboard = () => {
     if (savedSidebarState !== null) {
       setIsSidebarExpanded(savedSidebarState === 'false');
     }
+    
+    const savedDarkMode = localStorage.getItem('darkMode');
+    if (savedDarkMode && JSON.parse(savedDarkMode)) {
+      document.body.classList.add('dark-mode');
+    }
   }, []);
 
   // Dummy data
@@ -182,9 +187,9 @@ const Dashboard = () => {
                       <Link to="/settings" className="profile-option">
                         <span className="icon"><i className="fas fa-cog"></i></span> Settings
                       </Link>
-                      <Link to="/profilesetting" className="profile-option">
+                      {/* <Link to="/profilesetting" className="profile-option">
                         <span className="icon"><i className="fas fa-edit"></i></span> Edit
-                      </Link>
+                      </Link> */}
                       <div className="profile-option logout" onClick={() => setShowLogoutModal(true)}>
                         <span className="icon"><i className="fas fa-sign-out-alt"></i></span> Log out
                       </div>

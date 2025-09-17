@@ -9,6 +9,7 @@ import StudentList from './pages/StudentList';
 import SupportTicket from './pages/SupportTicket';
 import RenewSubscription from './pages/RenewSubscription';
 import EditSchoool from './pages/EditSchool';
+import Settings from './pages/Settings';
 function App() {
   return (
     <Router>
@@ -23,6 +24,7 @@ function App() {
           <Route path="/supportticket/:schoolId" element={<SupportTicket />} />
           <Route path="/renewsubscription/:schoolId" element={<RenewSubscription />} />
           <Route path="/editschool/:schoolId" element={<EditSchoool />} />
+          <Route path="/settings" element={<Settings />} />
 
 
         </Routes>
