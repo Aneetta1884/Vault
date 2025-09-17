@@ -18,14 +18,14 @@ body {
     padding: 40px 30px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     width: 400px;
-    height: 600px;
+    height: 500px;
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
   }
 
   .tall-card {
-    height: 700px; /* or whatever height you want */
+    height: 600px; /* or whatever height you want */
   }
   
   .logo {

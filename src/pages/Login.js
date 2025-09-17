@@ -60,29 +60,7 @@ function Login() {
 
         {/* Form */}
         <form onSubmit={handleSubmit} className="login-form">
-          <label className="role-label">I am a:</label>
-          <div className="role-options">
-            <label>
-              <input
-                type="radio"
-                name="role"
-                value="Admin"
-                checked={role === 'Admin'}
-                onChange={() => setRole('Admin')}
-              />
-              Admin
-            </label>
-            <label>
-              <input
-                type="radio"
-                name="role"
-                value="Teacher"
-                checked={role === 'Teacher'}
-                onChange={() => setRole('Teacher')}
-              />
-              Teacher
-            </label>
-          </div>
+         
 
           {activeTab === 'signup' && (
             <input

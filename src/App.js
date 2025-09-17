@@ -10,6 +10,7 @@ import SupportTicket from './pages/SupportTicket';
 import RenewSubscription from './pages/RenewSubscription';
 import EditSchoool from './pages/EditSchool';
 import Settings from './pages/Settings';
+import Login from './pages/Login';
 function App() {
   return (
     <Router>
@@ -25,6 +26,7 @@ function App() {
           <Route path="/renewsubscription/:schoolId" element={<RenewSubscription />} />
           <Route path="/editschool/:schoolId" element={<EditSchoool />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/login" element={<Login />} />
 
 
         </Routes>
